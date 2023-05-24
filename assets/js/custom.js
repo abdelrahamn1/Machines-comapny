@@ -20,6 +20,17 @@
     }
   });
 
+  let links = document.querySelector(".header-area .main-nav .nav");
+  let imgnav = document.querySelector(".header-area .main-nav img");
+  window.onscroll = function () {
+    if (window.scrollY >= 100) {
+      links.style.marginTop = "-50px";
+      imgnav.style.height = "80px";
+    } else {
+      links.style.marginTop = "-60px";
+      imgnav.style.height = "150px";
+    }
+  };
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     var box = $(".header-text").height();
