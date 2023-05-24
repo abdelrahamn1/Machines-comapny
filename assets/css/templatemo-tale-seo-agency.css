@@ -1915,8 +1915,25 @@ body {
     margin-top: 45px;
     padding: 30px;
   }
+  .slideshow-container .mySlides {
+    transform: translateX(40%);
+  }
 }
-
+@media (min-width: 993px) {
+  .slideshow-container .mySlides {
+    transform: translateX(20%);
+  }
+}
+@media (min-width: 1200px) {
+  .slideshow-container .mySlides {
+    transform: translateX(6%);
+  }
+}
+@media (min-width: 1450px) {
+  .slideshow-container .mySlides {
+    transform: translateX(0);
+  }
+}
 @media (max-width: 1000px) {
   .happy-clients .naccs .menu div {
     width: 24.5%;
@@ -1930,8 +1947,11 @@ body {
 
 @media (max-width: 1200px) {
   .services::before {
-    top: 60%;
+    top: 20%;
     transform: translateY(-50%);
+  }
+  .main-banner::before {
+    display: none;
   }
 }
 
